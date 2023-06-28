@@ -1,0 +1,142 @@
+/* body > div.profile-page > div.image-container.col-md-5.col-sm-12 {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+ background: linear-gradient(90deg, #52c234 0%, #061700 100%);
+  background: linear-gradient(270deg, #ecf0f1 0%, #52c234 100%);
+	background-size: 400% 400%;
+	animation: gradientBG 25s ease infinite;
+	height: 100% !important;
+    width: 42% !important;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+ */
+
+ body > div.profile-page > div.image-container.col-md-5.col-sm-12 {    background: linear-gradient(270deg, #ecf0f1 0%, #52c234 100%); }
+
+
+body > div.resume-page > div.image-container.col-md-5.col-sm-12 {
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(-269deg, #04A88B 0%, #0f3443 100%);
+	background-size: 400% 400%;
+	animation: gradientBG 25s cubic-bezier(0, 0, 0.2, 1) infinite;
+	height: 100% !important;
+    width: 42% !important;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+body > div.contact-page > div.image-container.col-md-5.col-sm-12{
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(90deg, #000000 0% , #0f9b0f 100%);
+	background-size: 400% 400%;
+	animation: gradientBG 25s ease infinite;
+	height: 100% !important;
+    width: 42% !important;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+ 
+
+body > div.portfolio-page > div.image-container.col-md-5.col-sm-12
+
+{
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(-90deg, #34e89e  0%, #0f3443 100%);
+	background-size: 400% 400%;
+	animation: gradientBG 25s ease infinite;
+	height: 100% !important;
+    width: 42% !important;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+body > div.contact-page > div.image-container.col-md-5.col-sm-12{
+background: linear-gradient(90deg, #000000 0% , #218c74 100%); }
+
+
+/*
+body > div.contact-page > div.image-container.col-md-5.col-sm-12{
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	font-family: "Exo", sans-serif;
+	color: #fff;
+	background: linear-gradient(90deg, #000000 0% , #0f9b0f 100%);
+	background-size: 400% 400%;
+	animation: gradientBG 25s ease infinite;
+	height: 100% !important;
+    width: 42% !important;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+*/
