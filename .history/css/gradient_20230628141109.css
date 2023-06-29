@@ -68,7 +68,7 @@ body > div.contact-page > div.image-container.col-md-5.col-sm-12{
 	
 	@media (max-width: 768px) {
 		body > div[class$="-page"] > div.image-container.col-md-5.col-sm-12{
-			height: 20% !important ;
+			height: 50% !important ;
 		}
 	}
 

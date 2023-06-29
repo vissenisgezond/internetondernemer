@@ -64,13 +64,9 @@ body > div.contact-page > div.image-container.col-md-5.col-sm-12{
 	background: linear-gradient(90deg, #000000 0% , #0f9b0f 100%);
 	background-size: 400% 400%;
 	animation: gradientBG 25s ease infinite;
-	}
-	
-	@media (max-width: 768px) {
-		body > div[class$="-page"] > div.image-container.col-md-5.col-sm-12{
-			height: 20% !important ;
-		}
-	}
+	height: 100% !important;
+    width: 42% !important;
+}
 
 @keyframes gradientBG {
 	0% {
@@ -97,11 +93,9 @@ body > div.portfolio-page > div.image-container.col-md-5.col-sm-12
 	background: linear-gradient(-90deg, #34e89e  0%, #0f3443 100%);
 	background-size: 400% 400%;
 	animation: gradientBG 25s ease infinite;
+	height: 100% !important;
   /*  width: 42% !important; */
 }
-
-
-
 
 @keyframes gradientBG {
 	0% {

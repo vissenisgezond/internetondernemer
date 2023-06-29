@@ -4,7 +4,9 @@ body > div.resume-page > div.content-container.col-md-7.col-sm-12 > div {
     top: 33%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-   
+
+
+
 }
 
 
@@ -14,9 +16,6 @@ body > div.resume-page > div.content-container.col-md-7.col-sm-12 > div {
       display: none;
       margin: 0 auto;
       margin-left: 500px;
-      position: relative;
-    top: 98px;
-    
 
     }
   }
@@ -29,11 +28,7 @@ body > div.resume-page > div.content-container.col-md-7.col-sm-12 > div {
   }
 
 
-  .panel-group {
-
-    width: 100%;
-
-  }
+  
   
 
 

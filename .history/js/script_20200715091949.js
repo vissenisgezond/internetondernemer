@@ -14,8 +14,6 @@
   Author Email  : h.nafees.anwar@gmail.com
 
 --------------------------------------------------------
-
-
 */
 
 /*  ------------------
@@ -297,16 +295,4 @@ $(document).ready(function () {
         }
     });
 
-});
-
-
-
-$(document).ready(function () {
-    $('#accordion .panel-collapse').on('show.bs.collapse', function () {
-        $(this).siblings('.panel-heading').find('.fa-chevron-down').removeClass('fa-chevron-down').addClass('fa-chevron-up');
-    });
-    
-    $('#accordion .panel-collapse').on('hide.bs.collapse', function () {
-        $(this).siblings('.panel-heading').find('.fa-chevron-up').removeClass('fa-chevron-up').addClass('fa-chevron-down');
-    });
 });

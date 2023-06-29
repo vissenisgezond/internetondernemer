@@ -4,37 +4,13 @@ body > div.resume-page > div.content-container.col-md-7.col-sm-12 > div {
     top: 33%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-   
+
+
+
 }
 
 
-/* Op schermen groter dan 768px, verberg de accordeon */
-@media (min-width: 768px) {
-    #accordion {
-      display: none;
-      margin: 0 auto;
-      margin-left: 500px;
-      position: relative;
-    top: 98px;
-    
 
-    }
-  }
-  
-  /* Op schermen kleiner of gelijk aan 768px, verberg de oorspronkelijke inhoud */
-  @media (max-width: 768px) {
-    .services-container {
-      display: none;
-    }
-  }
-
-
-  .panel-group {
-
-    width: 100%;
-
-  }
-  
 
 
 
