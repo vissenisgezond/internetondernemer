@@ -1,57 +1,11 @@
-.icon-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 50px;
-    height: 200px;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: 9999; /* Ensure the menu appears on top of other elements */
+body > div.resume-page > div.content-container.col-md-7.col-sm-12 > div {
+
+    position: absolute;
+    top: 33%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+   
 }
-
-.icon-btn {
-    background: none;
-    border: none;
-    color: #2A2B31;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.close-btn {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 9999; /* Ensure the close button appears on top of other elements */
-}
-
-.close-btn .icon-btn {
-    color: #2A2B31;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-
-
-
-@media (max-width: 600px) {
-    body > div.resume-page > div.content-container.col-md-7.col-sm-12 > div {
-        position: absolute;
-        top: 33%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-    }
-}
-
-
-
-#accordion2 {
-    position: relative;
-    bottom: 47%;
-}
-
-
 
 
 /* Op schermen groter dan 768px, verberg de accordeon */
@@ -67,50 +21,22 @@
     }
   }
   
-/* Op schermen kleiner of gelijk aan 768px, verberg de oorspronkelijke inhoud */
+ /* Op schermen kleiner of gelijk aan 768px, verberg de oorspronkelijke inhoud */
 @media (max-width: 768px) {
     .services-container {
       display: none;
     }
-    .Transformatie {
-        bottom: 46%;    
-        position: relative;}
+    body > div.resume-page > div.experience.clearfix {
+        bottom: 28%;
+    }
   }
- 
+
   .panel-group {
 
     width: 100%;
 
   }
   
-
-  /* Op schermen groter dan 768px, verberg de accordeon */
-@media (min-width: 768px) {
-    #accordion2 {
-    display: none;
-    margin: 0 auto;
-    margin-left: 500px;
-    position: relative;
-    top: 98px;
-    }
-    }
-    
-    /* Op schermen kleiner of gelijk aan 768px, verberg de oorspronkelijke inhoud */
-    @media (max-width: 768px) {
-    .services-container {
-    display: none;
-    }
-    .Transformatie {
-    bottom: 46%;
-    
-    position: relative;}
-    }
-    
-    .panel-group {
-    
-    width: 100%;
-    
-    }
 
 
 

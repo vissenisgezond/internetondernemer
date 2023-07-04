@@ -1,0 +1,198 @@
+
+#flowchart *,
+:before,
+:after {
+    box-sizing: border-box;
+}
+
+
+#wrapperflowchart {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80em;
+}
+
+#containerflowchart {
+    float: left;
+    padding: 1em;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+ul,
+ol {
+   
+}
+
+ol.process-chart {
+    color: #000;
+    counter-reset: item;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+
+ol.process-chart > li,
+ol.process-chart > li > div {
+    position: relative;
+}
+
+ol.process-chart > li {
+    background: linear-gradient(to right, rgba(0,0,0,0.25) 0%, transparent 25%);
+    background-color: #fff !;
+    counter-increment: item;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin: 1em 1em 1em -1em;
+    min-width: 11.25em;
+    padding: 1em 1em 1em 2em;
+}
+
+ol.process-chart > li:before,
+ol.process-chart > li > div:before {
+    color: rgba(0,0,0,0.75);
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+}
+
+ol.process-chart > li:before {
+    content: 'Stap';
+    display: inline-block;
+    font-weight: 300;
+    left: 2em;
+    letter-spacing: 0.1em;
+    position: absolute;
+    top: 1em;
+    transform: rotate(90deg);
+    transform-origin: 25% 50%;
+}
+
+ol.process-chart > li:after {
+    border-bottom: 1em solid transparent;
+    border-left: 1em solid #fff;
+    border-right: 0 solid transparent;
+    border-top: 1em solid transparent;
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: -1em;
+    top: 0;
+    width: 0;
+    z-index: 1;
+}
+
+ol.process-chart > li > div {
+    padding: 0 0 0 1em;
+}
+
+ol.process-chart > li > div:before {
+    content: counter(item, decimal-leading-zero);
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1;
+}
+
+ol.process-chart > li > div:before {
+content:.5rem decimal-leading-zero); /* changed content /
+font-size:.5rem; / changed font-size /
+font-weight:.5rem; / changed font-weight /
+line-height:.5rem; / changed line-height */
+}
+
+/** PRIMARY **/
+ol.process-chart > li:nth-of-type(6n+1) {
+background-color:#06A78F; /* changed color */
+}
+
+ol.process-chart > li:nth-of-type(6n+1):after {
+border-left-color:#06A78F; /* changed color */
+}
+
+/** SECONDARY **/
+ol.process-chart > li:nth-of-type(6n+2) {
+background-color:#059E85; /* changed color */
+}
+
+ol.process-chart > li:nth-of-type(6n+2):after {
+border-left-color:#059E85; /* changed color */
+}
+
+/** TERTIARY **/
+ol.process-chart > li:nth-of-type(6n+3) {
+background-color:#04866D; /* changed color */
+}
+
+ol.process-chart > li:nth-of-type(6n+3):after {
+border-left-color:#04866D; /* changed color */
+}
+
+/** QUATERNARY **/
+ol.process-chart > li:nth-of-type(6n+4) {
+background-color:#04A47A; /* changed color */
+}
+
+ol.process-chart > li:nth-of-type(6n+4):after {
+border-left-color:#04A47A; /* changed color */
+}
+
+/** QUINARY **/
+ol.process-chart > li:nth-of-type(6n+5) {
+background-color:#059B80; /* changed color */
+}
+
+ol.process-chart > li:nth-of-type(6n+5):after {
+border-left-color:#059B80; /* changed color */
+}
+
+ol.process-chart > li > div {
+color:#fff; /* added color */
+}
+
+/** MEDIA QUERIES **/
+@media only screen and ( max-width: 40em ) {
+
+ol.process-chart {
+margin:.5rem 0 0 0; /* changed margin /
+padding:.5rem 0 0 0; / changed padding */
+}
+
+ol.process-chart > li {
+background:linear-gradient(rgba(0,0,0,0.25) 0%, transparent 25%);
+flex-basis:inherit;
+margin:-.5rem 0 .5rem 0; /* changed margin /
+min-width:inherit;
+padding:.5rem .5rem 0 .5rem; / changed padding */
+}
+
+ol.process-chart > li:before {
+left:.5rem; /* changed left /
+top:.5rem; / changed top */
+}
+
+ol.process-chart > li:after {
+border-bottom:0 solid transparent;
+border-left:.5rem solid transparent!important; /* changed border-left / border-right:.5rem solid transparent; / changed border-right / border-top:.5rem solid #fff; / changed border-top / bottom:-.5rem; / changed bottom */ height:0; left:0; right:inherit; top:inherit; width:100%; }
+
+ol.process-chart > li > div { padding:.5rem .5rem 0 .5rem; /* changed padding */ }
+
+/** PRIMARY **/ ol.process-chart > li:nth-of-type(6n+1):after { border-top-color:#06A78F; /* changed color */ }
+
+/** SECONDARY **/ ol.process-chart > li:nth-of-type(6n+2):after { border-top-color:#059E85; /* changed color */ }
+
+/** TERTIARY **/ ol.process-chart > li:nth-of-type(6n+3):after { border-top-color:#04866D; /* changed color */ }
+
+/** QUATERNARY **/ ol.process-chart > li:nth-of-type(6n+4):after { border-top-color:#04A47A; /* changed color */ }
+
+/** QUINARY **/ ol.process-chart > li:nth-of-type(6n+5):after { border-top-color:#059B80;/* changed color */ }
+

@@ -1,0 +1,120 @@
+#wrapperflowchart ol.process-chart {
+color: #000;
+counter-reset: item;
+display: flex;
+flex-wrap: wrap;
+list-style: none;
+margin: 0 0 0 1em;
+padding: 0;
+}
+
+#wrapperflowchart ol.process-chart > li,
+#wrapperflowchart ol.process-chart > li > div {
+position: relative;
+}
+
+#wrapperflowchart ol.process-chart > li {
+background: linear-gradient(to right, rgba(0,0,0,0.25) 0%, transparent 25%);
+background-color: #fff;
+counter-increment: item;
+flex-basis: 0;
+flex-grow: 1;
+margin: 1em 1em 1em -1em;
+min-width: 11.25em;
+padding: 1em 1em 1em 2em;
+}
+
+#wrapperflowchart ol.process-chart > li:before,
+#wrapperflowchart ol.process-chart > li > div:before {
+color: rgba(0,0,0,0.75);
+font-family: 'Oswald', sans-serif;
+text-transform: uppercase;
+}
+
+#wrapperflowchart ol.process-chart > li:before {
+content: 'Stap';
+display: inline-block;
+
+font-weight:.5rem; /* changed font-weight /
+left:.5rem; / changed left /
+letter-spacing:.5rem; / changed letter-spacing /
+position:absolute;
+top:.5rem; / changed top /
+transform:rotate(90deg);
+transform-origin:.5% .5%; / changed transform-origin */
+}
+
+#wrapperflowchart ol.process-chart > li:after {
+border-bottom:.5rem solid transparent; /* changed border-bottom / border-left:.5rem solid #fff; / changed border-left / border-right:.5rem solid transparent; / changed border-right / border-top:.5rem solid transparent; / changed border-top / content:''; height:.5%; / changed height / position:absolute; right:-.5rem; / changed right / top:.5%; / changed top / width:.5%; / changed width */ z-index:.5rem; }
+
+#wrapperflowchart ol.process-chart > li > div {
+padding:.5rem .5rem .5rem .5rem; /* changed padding */
+}
+
+#wrapperflowchart ol.process-chart > li > div:before {
+content:.5rem decimal-leading-zero); /* changed back /
+font-size:.5rem; / changed font-size /
+font-weight:.5rem; / changed font-weight /
+line-height:.5rem; / changed line-height */
+}
+
+/** PRIMARY **/ #wrapperflowchart ol.process-chart > li:nth-of-type(6n+1) { background-color:#06A78F;/* changed color */ }
+
+#wrapperflowchart ol.process-chart > li:nth-of-type(6n+1):after { border-left-color:#06A78F;/* changed color */ }
+
+/** SECONDARY **/ #wrapperflowchart ol.process-chart > li:nth-of-type(6n+2) { background-color:#059E85;/* changed color */ }
+
+#wrapperflowchart ol.process-chart > li:nth-of-type(6n+2):after { border-left-color:#059E85;/* changed color */ }
+
+/** TERTIARY **/ #wrapperflowchart ol.process-chart > li:nth-of-type(6n+3) { background-color:#04866D;/* changed color */ }
+
+#wrapperflowchart ol.process-chart > li:nth-of-type(6n+3):after { border-left-color:#04866D;/* changed color */ }
+
+/** QUATERNARY **/ #wrapperflowchart ol.process-chart > li:nth-of-type(6n+4) { background-color:#04A47A;/* changed color */ }
+
+#wrapperflowchart ol.process-chart > li:nth-of-type(6n+4):after { border-left-color:#04A47A;/* changed color */ }
+
+/** QUINARY **/ #wrapperflowchart ol.process-chart > li:nth-of-type(6n+5) { background-color:#059B80;/* changed color */ }
+
+#wrapperflowchart ol.process-chart > li:nth-of-type(6n+5):after { border-left-color:#059B80;/* changed color */ }
+
+#wrapperflowchart ol.process-chart > li > div { color:#fff; /* added color */ }
+
+/** MEDIA QUERIES **/
+@media only screen and ( max-width: 40em ) {
+
+#wrapperflowchart ol.process-chart {
+margin:.5rem 0 0 0; /* changed margin /
+padding:.5rem 0 0 0; / changed padding */
+}
+
+#wrapperflowchart ol.process-chart > li {
+background:linear-gradient(rgba(0,0,0,0.25) 0%, transparent 25%);
+flex-basis:inherit;
+margin:-.5rem 0 .5rem 0; /* changed margin /
+min-width:inherit;
+padding:.5rem .5rem 0 .5rem; / changed padding */
+}
+
+#wrapperflowchart ol.process-chart > li:before {
+left:.5rem; /* changed left /
+top:.5rem; / changed top */
+}
+
+#wrapperflowchart ol.process-chart > li:after {
+border-bottom:0 solid transparent;
+border-left:.5rem solid transparent!important; /* changed border-left / border-right:.5rem solid transparent; / changed border-right / border-top:.5rem solid #fff; / changed border-top / bottom:-.5rem; / changed bottom */ height:0; left:0; right:inherit; top:inherit; width:100%; }
+
+#wrapperflowchart ol.process-chart > li > div { padding:.5rem .5rem 0 .5rem; /* changed padding */ }
+
+/** PRIMARY **/ #wrapperflowchart ol.process-chart > li:nth-of-type(6n+1):after { border-top-color:#06A78F;/* changed color */ }
+
+/** SECONDARY **/ #wrapperflowchart ol.process-chart > li:nth-of-type(6n+2):after { border-top-color:#059E85;/* changed color */ }
+
+/** TERTIARY **/ #wrapperflowchart ol.process-chart > li:nth-of-type(6n+3):after { border-top-color:#04866D;/* changed color */ }
+
+/** QUATERNARY **/ #wrapperflowchart ol.process-chart > li:nth-of-type(6n+4):after { border-top-color:#04A47A;/* changed color */ }
+
+/** QUINARY **/ #wrapperflowchart ol.process-chart > li:nth-of-type(6n+5):after { border-top-color:#059B80;/* changed color */ }
+
+}

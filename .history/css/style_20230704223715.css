@@ -3,33 +3,27 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 50px;
-    height: 200px;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: 9999; /* Ensure the menu appears on top of other elements */
+    width: 50px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    position: fixed; /* This keeps the menu at the same place even when scrolling */
+    right: 10px; /* Adjust as needed */
+    top: 10px; /* Adjust as needed */
 }
 
 .icon-btn {
     background: none;
     border: none;
-    color: #2A2B31;
+    color: white; /* Adjust as needed */
     cursor: pointer;
     transition: color 0.3s ease;
 }
 
-.close-btn {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 9999; /* Ensure the close button appears on top of other elements */
+.icon-btn:hover {
+    color: lightgray; /* Adjust as needed */
 }
 
-.close-btn .icon-btn {
-    color: #2A2B31;
-    cursor: pointer;
-    transition: color 0.3s ease;
+.icon-btn i {
+    font-size: 20px; /* Adjust as needed */
 }
 
 

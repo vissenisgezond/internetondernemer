@@ -1,0 +1,106 @@
+body,html{
+  font-family:  "Microsoft JhengHei",serif;
+  }
+  .flow-chart{
+  max-width: 1200px;
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+  .flow-chart .flow-wrap{
+  flex: 1 0 20%;
+  max-width: 30%;
+  }
+  .flow-chart .flow-title{
+  text-align: center;
+  }
+  .flow-chart .flow-title .number{
+  background-color: #218C74; /* changed color /
+  color: white; / changed color */
+  margin: 10px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 50px;
+  position: relative;
+  padding-left: 2rem;
+  
+  }
+  .flow-chart .flow-wrap:nth-child(2) .flow-title .number{
+  background-color: #218C74; /* changed color /
+  }
+  .flow-chart .flow-wrap:nth-child(3) .flow-title .number{
+  background-color: #218C74; / changed color /
+  }
+  .flow-chart .flow-wrap:nth-child(4) .flow-title .number{
+  background-color: #218C74; / changed color /
+  }
+  .flow-chart .flow-wrap:nth-child(5) .flow-title .number{
+  background-color: #218C74; / changed color /
+  }
+  .flow-chart .flow-title .number:before{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 30px;
+  border-color: transparent transparent transparent white; / changed color /
+  }
+  .flow-chart .flow-title .number:after{
+  content:"";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 30px;
+  border-color: transparent transparent transparent #218C74; / changed color */
+  z-index: 1;
+  }
+  
+  
+  .flow-chart li.flow-item{
+  border-color:white; /* changed color */
+  border-radius:1rem;
+  margin:.5rem;
+  padding:.5rem;
+  text-align:center;
+  position:relative;
+  }
+  
+  .flow-chart li.flow-item + li {
+  background-color:#218C74; /* changed color */
+  }
+  
+  .flow-chart li.flow-item + li:before{
+  content:"";
+  position:absolute;
+  top:-10px;
+  left:50%;
+  transform:translateX(-50%);
+  width:0;
+  height:0;
+  border-style:solid;
+  border-width:15px7.5px07.5px;
+  border-color:white transparent transparent transparent; /* changed color */
+  }
+  
+  .flow-chart li.flow-item p{
+  font-weight:bold;
+  margin:.5rem; /* added margin */
+  }
+  
+  .flow-chart li.flow-item span{
+  font-size:.8rem;
+  }
+  
+  .flow-chart li.flow-item a{
+  font-size:.8rem; display:inline-block; word-break:normal; /* changed display and word-break / text-decoration:none; / added text-decoration / color:white; / added color */ }
+  
+  .flow-chart li.flow-item.disable{ background-color:#218C74!important; color:#666; }

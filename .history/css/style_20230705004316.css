@@ -14,7 +14,7 @@
 .icon-btn {
     background: none;
     border: none;
-    color: #2A2B31;
+    color: white;
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -27,7 +27,7 @@
 }
 
 .close-btn .icon-btn {
-    color: #2A2B31;
+    color: white;
     cursor: pointer;
     transition: color 0.3s ease;
 }

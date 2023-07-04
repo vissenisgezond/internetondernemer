@@ -1,11 +1,4 @@
 $(document).ready(function() {
-    function hideAllPages() {
-        $('.portfolio-page').hide();
-        $('.resume-page').hide();
-        $('.contact-page').hide();
-        $('.profile-page').hide();
-    }
-
     function handleButtonClick(pageClass) {
         var introWidth = $('.introduction').width(),
             menuWidth = $('.menu').width();
@@ -20,7 +13,7 @@ $(document).ready(function() {
             });
         });
         // hide all pages before showing the new one
-        hideAllPages();
+        $('.page').hide();
         $('.' + pageClass).fadeIn(1200);
     }
 
@@ -52,6 +45,7 @@ $(document).ready(function() {
         handleButtonClick('portfolio-page');
     });
 });
+
 
 
 

@@ -1,0 +1,100 @@
+body,html{
+  font-family:  "Microsoft JhengHei",serif;
+}
+.flow-chart{
+  max-width: 1200px;
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.flow-chart .flow-wrap{
+  flex: 1 0 20%;
+  max-width: 30%;
+}
+.flow-chart .flow-title{
+  text-align: center;
+}
+.flow-chart .flow-title .number{
+  background-color: #218C74;
+  color: white;
+  margin: 10px;
+  height: 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 50px;
+  position: relative;
+  padding-left: 2rem;
+}
+.flow-chart .flow-title .number:before{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 30px;
+  border-color: transparent transparent transparent #218C74;
+}
+.flow-chart .flow-title .number:after{
+  content:"";
+  position: absolute;
+  top: 0;
+  right: -30px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 30px;
+  border-color: transparent transparent transparent #218C74;
+  z-index: 1;
+}
+.flow-chart .flow-title .txt{
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.flow-chart .flow-group{
+  list-style-type: none;
+  padding-left: 0;
+} 
+.flow-chart li.flow-item{
+  border: 1px solid #218C74;
+  border-radius: 1rem;
+  margin: .5rem;
+  padding: 1rem 0.5rem;
+  text-align: center;
+  position: relative;
+}
+.flow-chart li.flow-item + li {
+  background-color: #218C74;
+}
+.flow-chart li.flow-item + li:before{
+  content:"";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 7.5px 0 7.5px;
+  border-color: #218C74 transparent transparent transparent;
+}
+.flow-chart .flow-item p{
+  font-weight: bold;
+  margin: 0;
+}
+.flow-chart .flow-item span{
+  font-size: .8rem;
+}
+.flow-chart .flow-item a{
+  font-size: .8rem;
+  display: inline;
+  word-break: break-all;
+}
+.flow-chart .flow-wrap .flow-item.disable{
+  background-color: #218C74!important;
+  color: white;
+}

@@ -1,68 +1,6 @@
 $(document).ready(function() {
-    function hideAllPages() {
-        $('.portfolio-page').hide();
-        $('.resume-page').hide();
-        $('.contact-page').hide();
-        $('.profile-page').hide();
-    }
-
-    function handleButtonClick(pageClass) {
-        var introWidth = $('.introduction').width(),
-            menuWidth = $('.menu').width();
-        $('.introduction').animate({
-            left: '-' + introWidth
-        }, 1000, 'easeOutQuart');
-        $('.menu').animate({
-            left: menuWidth
-        }, 1000, 'easeOutQuart', function () {
-            $('.home-page').css({
-                visibility: 'hidden'
-            });
-        });
-        // hide all pages before showing the new one
-        hideAllPages();
-        $('.' + pageClass).fadeIn(1200);
-    }
-
-    $('#icon-diensten2').on('click', function() {
-        handleButtonClick('portfolio-page');
-    });
-
-    $('#icon-projecten2').on('click', function() {
-        handleButtonClick('resume-page');
-    });
-
-    $('#icon-contact2').on('click', function() {
-        handleButtonClick('contact-page');
-    });
-
-    $('#icon-profile2').on('click', function() {
-        handleButtonClick('profile-page');
-    });
-
     $('#open-contact-button').on('click', function() {
-        handleButtonClick('contact-page');
-    });
-
-    $('#open-diensten-button').on('click', function() {
-        handleButtonClick('resume-page');
-    });
-
-    $('#open-projecten-button').on('click', function() {
-        handleButtonClick('portfolio-page');
-    });
-});
-
-
-
-
-
- /*  // code under this is for buttons on the about page  which is working
-
-$(document).ready(function() {
-    $('#open-contact-button').on('click', function() {
-   
-/*     // Hide the homepage and show the contact page just like when the original contact button is clicked
+        // Hide the homepage and show the contact page just like when the original contact button is clicked
         var introWidth = $('.introduction').width(),
             menuWidth = $('.menu').width();
         $('.introduction').animate({
@@ -76,40 +14,6 @@ $(document).ready(function() {
             });
         });
         $('.contact-page').fadeIn(1200);
-    });
-});
-
-$(document).ready(function() {
-    $('#open-diensten-button').on('click', function() {
-        var introWidth = $('.introduction').width(),
-            menuWidth = $('.menu').width();
-        $('.introduction').animate({
-            left: '-' + introWidth
-        }, 1000, 'easeOutQuart');
-        $('.menu').animate({
-            left: menuWidth
-        }, 1000, 'easeOutQuart', function () {
-            $('.home-page').css({
-                visibility: 'hidden'
-            });
-        });
-        $('.resume-page').fadeIn(1200);
-    });
-
-    $('#open-projecten-button').on('click', function() {
-        var introWidth = $('.introduction').width(),
-            menuWidth = $('.menu').width();
-        $('.introduction').animate({
-            left: '-' + introWidth
-        }, 1000, 'easeOutQuart');
-        $('.menu').animate({
-            left: menuWidth
-        }, 1000, 'easeOutQuart', function () {
-            $('.home-page').css({
-                visibility: 'hidden'
-            });
-        });
-        $('.portfolio-page').fadeIn(1200);
     });
 });
 
@@ -259,7 +163,7 @@ $(document).ready(function () {
 
     // Close Button, Hide Menu
 
-    $('#icon-close').on('click', function () {
+    $('.close-btn').on('click', function () {
         $('.home-page').css({
             visibility: 'visible'
         });
