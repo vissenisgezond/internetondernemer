@@ -57,62 +57,7 @@ $(document).ready(function() {
 
 
 
- /*  // code under this is for buttons on the about page  which is working
-
-$(document).ready(function() {
-    $('#open-contact-button').on('click', function() {
-   
-/*     // Hide the homepage and show the contact page just like when the original contact button is clicked
-        var introWidth = $('.introduction').width(),
-            menuWidth = $('.menu').width();
-        $('.introduction').animate({
-            left: '-' + introWidth
-        }, 1000, 'easeOutQuart');
-        $('.menu').animate({
-            left: menuWidth
-        }, 1000, 'easeOutQuart', function () {
-            $('.home-page').css({
-                visibility: 'hidden'
-            });
-        });
-        $('.contact-page').fadeIn(1200);
-    });
-});
-
-$(document).ready(function() {
-    $('#open-diensten-button').on('click', function() {
-        var introWidth = $('.introduction').width(),
-            menuWidth = $('.menu').width();
-        $('.introduction').animate({
-            left: '-' + introWidth
-        }, 1000, 'easeOutQuart');
-        $('.menu').animate({
-            left: menuWidth
-        }, 1000, 'easeOutQuart', function () {
-            $('.home-page').css({
-                visibility: 'hidden'
-            });
-        });
-        $('.resume-page').fadeIn(1200);
-    });
-
-    $('#open-projecten-button').on('click', function() {
-        var introWidth = $('.introduction').width(),
-            menuWidth = $('.menu').width();
-        $('.introduction').animate({
-            left: '-' + introWidth
-        }, 1000, 'easeOutQuart');
-        $('.menu').animate({
-            left: menuWidth
-        }, 1000, 'easeOutQuart', function () {
-            $('.home-page').css({
-                visibility: 'hidden'
-            });
-        });
-        $('.portfolio-page').fadeIn(1200);
-    });
-});
-
+ 
 
 
 
