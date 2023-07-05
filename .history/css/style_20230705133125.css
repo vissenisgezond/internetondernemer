@@ -142,11 +142,7 @@
     }
     
 
-    @media only screen and (min-width: 992px) {
-        #icon-whatsapp2 > a > i {
-        color: #2A2B31;
-        }
-        }
+
 
 
 @media (max-width: 600px) {

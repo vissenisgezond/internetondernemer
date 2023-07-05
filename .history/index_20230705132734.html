@@ -179,11 +179,10 @@
         </div>
         <div class="icon-menu">
             <button class="icon-btn" id="icon-profile2"><i class="fa fa-user"></i></button>
-         
-            <button class="icon-btn" id="icon-projecten2"><i class="fa fa-briefcase"></i></button>
-            <button class="icon-btn" id="icon-diensten2"><i class="fa fa-graduation-cap"></i></button>
+            <button class="icon-btn" id="icon-diensten2"><i class="fa fa-briefcase"></i></button>
+            <button class="icon-btn" id="icon-projecten2"><i class="fa fa-graduation-cap"></i></button>
             <button class="icon-btn" id="icon-contact2"><i class="fa fa-envelope-o"></i></button>
-            <button class="icon-btn" id="icon-whatsapp2"><a href="https://wa.me/639614391029"> <i class="fa fa-whatsapp"></i></a></button>
+            <button id="open-whatsapp-button"><i class="fa fa-whatsapp"></i></button>
         </div>
     </div>
     
@@ -434,103 +433,104 @@
 
 
 
-            <div class="panel-group" id="accordion">
+<div class="panel-group" id="accordion">
 
-                <!-- Dienst 1: Consultatie -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="panel-title" style="display: block;">
-                            Consultatie <i class="fa fa-chevron-down pull-right"></i>
-                        </a>
-                    </div>
-                    <div id="collapse1" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            Een goede IT-consultant begrijpt de bedrijfsdoelen van de klant en levert op maat gemaakte oplossingen. De consultant heeft een grondige kennis van de nieuwste technologieën en adviseert de klant over de meest geschikte tools en strategieën.
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dienst 2: Webontwikkeling -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="panel-title" style="display: block;">
-                            Webontwikkeling <i class="fa fa-chevron-down pull-right"></i>
-                        </a>
-                    </div>
-                    <div id="collapse2" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            Door het volgen van de nieuwste webtrends en -technologieën, creëert een bekwame webontwikkelaar functionele, kwalitatieve websites die naadloos aansluiten op de behoeften van klanten. Hun technische expertise, probleemoplossend vermogen, samenwerkingsvaardigheden en oog voor detail maken hen een onmisbaar onderdeel van elk webproject.
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dienst 3: SEO -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="panel-title" style="display: block;">
-                            SEO <i class="fa fa-chevron-down pull-right"></i>
-                        </a>
-                    </div>
-                    <div id="collapse3" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            Goede SEO betreft het maken van relevante, kwaliteitscontent, optimaliseren van gebruikerservaring en technische factoren, genereren van backlinks en richten op lokale resultaten. Dit verhoogt de website zichtbaarheid, verbetert webverkeer kwaliteit en kwantiteit, en trekt meer organisch verkeer aan.
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dienst 4: Copywriting -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="panel-title" style="display: block;">
-                            Copywriting <i class="fa fa-chevron-down pull-right"></i>
-                        </a>
-                    </div>
-                    <div id="collapse4" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            Met hun creativiteit en diepgaand begrip van de doelgroep, creëert een bekwaam tekstschrijver heldere, foutloze teksten. Ze hebben oog voor detail, werken effectief samen en zijn goed thuis in de principes van marketing en reclame. De teksten die ze creëren spreken de lezer aan, vallen op en dienen bedrijfsdoelen, resulterend in overtuigende copy die tot actie aanzet en resultaten oplevert.
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dienst 5: AI Toepassingen -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="panel-title" style="display: block;">
-                            AI Toepassingen <i class="fa fa-chevron-down pull-right"></i>
-                        </a>
-                    </div>
-                    <div id="collapse5" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            Een innovatieve internetondernemer gebruikt AI voor content, afbeeldingen, SEO en tijdsbesparing. Ze kiezen en gebruiken AI-tools voor copywriting, contentstrategie, personalisatie en AI-kunst. Ze profiteren ook van AI voor automatisering van klantcontact, segmentatie, campagnes en uitgaven.
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Dienst 6: Outsourcing -->
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="panel-title" style="display: block;">
-                            Outsourcing <i class="fa fa-chevron-down pull-right"></i>
-                        </a>
-                    </div>
-                    <div id="collapse6" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            Outsourcing biedt kostenbesparing, toegang tot gespecialiseerde expertise, terwijl delegatie de productiviteit verhoogt, medewerkers helpt ontwikkelen en teamwork bevordert. Een effectieve Internet-ondernemer weet wanneer en hoe deze strategieën toe te passen, rekening houdend met de aard van de taak en de beschikbare middelen.
-                        </div>
-                    </div>
-                </div>
-                
-                </div>
-                
-                </div>
-                
+                <!-- Hier zijn alle zes diensten -->
+        <!-- Dienst 1: Consultatie -->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" class="panel-title" style="display: block;">
+            Consultatie <i class="fa fa-chevron-down pull-right"></i>
+        </a>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">
+            Sed mi sem, sagi eros ac, laoreet commodo diam...
+        </div>
+    </div>
+</div>
+
+<!-- Dienst 2: Webontwikkeling -->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="panel-title" style="display: block;">
+            Webontwikkeling <i class="fa fa-chevron-down pull-right"></i>
+        </a>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+            Vivamus et rhoncus mauris...
+        </div>
+    </div>
+</div>
+
+<!-- Dienst 3: SEO -->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="panel-title" style="display: block;">
+            SEO <i class="fa fa-chevron-down pull-right"></i>
+        </a>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+            SEO is een verfijnd proces dat zowel creativiteit als kennis vereist. Het gaat om het optimaliseren van de inhoud, de links en de techniek van je website        </div>
+    </div>
+</div>
+
+<!-- Dienst 4: Copywriting -->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="panel-title" style="display: block;">
+            Copywriting <i class="fa fa-chevron-down pull-right"></i>
+        </a>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+            Nunc egestas sed efficitur nulla a sodales...
+        </div>
+    </div>
+</div>
+
+<!-- Dienst 5: AI Toepassingen -->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="panel-title" style="display: block;">
+            AI Toepassingen <i class="fa fa-chevron-down pull-right"></i>
+        </a>
+    </div>
+    <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">
+            Vestibulum dictum tincidunt pulvinar elementum...
+        </div>
+    </div>
+</div>
+
+<!-- Dienst 6: Outsourcing -->
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapse6" class="panel-title" style="display: block;">
+            Outsourcing <i class="fa fa-chevron-down pull-right"></i>
+        </a>
+    </div>
+    <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body">
+            Vestibulum tincidunt sed dapibus elit...
+        </div>
+    </div>
+</div>
+</div>
+
+</div>
        
 
 <div style="background-color: #218C74; padding: 10px; text-align: center;">
     <h2 style="color: white; font-weight: bold;">Accordion Group 1 Title</h2>
 </div>
 
-
+<div class="panel-group" id="accordion2">
+    <div style="background-color: #218C74; padding: 10px; text-align: center;">
+        <h2 style="color: white; font-weight: bold;">Accordion Group 1 Title</h2>
+    </div>
     <!-- Stap 1: Consultatie & Strategische Planning -->
     <div class="panel panel-default">
         <div class="panel-heading">
@@ -1066,39 +1066,59 @@
         </div>
         
         <!--( b ) Contact Page Content -->
-        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='index2.html';}"></iframe>
-
-        <script type="text/javascript">var submitted=false;</script>
         
         <div class="content-container col-md-7 col-sm-12">
+            
+            <!--( A ) Contact Form -->
+            
             <div>
                 <h2 class="small-heading">Tot uw dienst</h2>
+                
                 <div class="contact-form col-sm-11 clearfix">
-                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSeb7AFDfeyfH0uqJukTvx2U0WJc3mP7UBrd0pGhTKKOkqe1JQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                    
+                    <form action="php/contact.php" id="contactForm" method="post" name="contactForm">
                         <fieldset>
                             <div class="col-sm-12">
-                                <input id="email" name="entry.421034488" placeholder="Email*" type="text" value="">
+                                <input id="name" name="name" placeholder="Naam*" type="text" value="">
                             </div>
+                            
+                            <!-- Name Field [ END ] -->
+                            
+                            <div class="col-sm-12">
+                                <input id="email" name="email" placeholder="Email*" type="text" value="">
+                            </div>
+                            
+                            <!-- Email Field [ END ] -->
+                            
                             <div class="col-xs-12">
-                                <textarea cols="5" id="message" name="entry.346911499" placeholder="Het bericht....*"></textarea>
+                                <textarea cols="5" id="message" name="message" placeholder="Het bericht....*"></textarea>
                             </div>
+                            
+                            <!-- Message Field [ END ] -->
+                            
                             <div class="col-xs-12">
-                                <button type="submit" class="submit active">Verstuur</button>
+                                <button class="submit active">Verstuur</button>
                             </div>
+                            
                             <div class="error col-xs-12">
                                 <h3></h3>
                             </div>
+                            
+                            <!-- Error Message [ END ] -->
+                            
                             <div class="success col-xs-12">
                                 <h3>Success! Your message was sent.</h3>
                             </div>
+                            
+                            <!-- Submit Button [ END ] -->
+                            
                         </fieldset>
                     </form>
+                    
+                    <!-- Contact Form [ END ] -->
+                    
                 </div>
             </div>
-        </div>
-        
-        
-        
             
             <!--( B ) Google Map
             

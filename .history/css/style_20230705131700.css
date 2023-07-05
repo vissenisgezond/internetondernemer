@@ -116,10 +116,10 @@
         padding: 10px; /* Increase padding around icons on mobile */
     }
 
-    #icon-close > i {     font-size: 34px !important;    color: #232526;  }
+    #icon-close > i {     font-size: 34px !important;    color: #232526  }
 }
 
-#icon-whatsapp2 > a > i  { color: #232526;  }
+    
 
     
     
@@ -142,11 +142,7 @@
     }
     
 
-    @media only screen and (min-width: 992px) {
-        #icon-whatsapp2 > a > i {
-        color: #2A2B31;
-        }
-        }
+
 
 
 @media (max-width: 600px) {

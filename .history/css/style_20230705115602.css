@@ -26,107 +26,82 @@
     font-size: 34px !important;
     }
     
-    #icon-close > i {     font-size: 34px !important;    color: #2A2B31  }
-    
+    #icon-close > i {     font-size: 34px !important; }
+
     #icon-contact2 {
         font-weight: bold !important; /* Of een getal tussen 100 en 900, afhankelijk van het gewicht dat je wilt bereiken */
     }
     
 
-   /* algemene CSS stijlen */
-
-.menu-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    right: 10px;
-    top: 10px;
-    z-index: 9999;
-    color: #2A2B31;
-}
-
-.icon-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 50px;
-    height: 150px;
-}
-
-.close-btn {
-    position: relative;
-    align-self: flex-start;
-    color: #2A2B31;
-}
-
-.icon-btn {
-    font-size: 1.8em; /* Default size of icons */
-    padding: 5px; /* Default padding around icons */
-    background: none;
-    border: none;
-    color: #2A2B31;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-/* CSS stijlen voor specifieke iconen */
-
-#icon-close > i {     
-    font-size: 34px;
-    color: #2A2B31;
-}
-
-#icon-contact2 {
-    font-weight: bold; /* Of een getal tussen 100 en 900, afhankelijk van het gewicht dat je wilt bereiken */
-}
-
-/* CSS stijlen voor mobiele apparaten */
-
-@media screen and (max-width: 600px) {
     .menu-container {
-        flex-direction: row;
-        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: 10px;
         top: 10px;
-        width: 100%; /* Make the container full width on mobile */
-        left: 80px; /* Align it to the left */
-        right: 0; /* Align it to the right */
-        color: #232526;
+        z-index: 9999;
     }
-
+    
     .icon-menu {
-        flex-direction: row;
-        width: auto;
-        height: 50px;
-        align-self: center;
-        color: #232526;            
-        justify-content: center; /* Align the icons to the center */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 50px;
+        height: 150px;
     }
-
+    
     .close-btn {
-        order: -1;
-        color: #232526;
-        align-self: flex-end; /* Align the close button to the right */
+        position: relative;
+        align-self: flex-start;
     }
-
+    
     .icon-btn {
-        color: #232526;
-        font-size: 2em; /* Increase size of icons on mobile */
-        padding: 10px; /* Increase padding around icons on mobile */
+        font-size: 1.8em; /* Default size of icons */
+        padding: 5px; /* Default padding around icons */
     }
-
-    #icon-close > i {     font-size: 34px !important;    color: #232526;  }
-}
-
-#icon-whatsapp2 > a > i  { color: #232526;  }
+    
+    @media screen and (max-width: 600px) {
+        .menu-container {
+            flex-direction: row;
+            justify-content: space-between;
+            top: 10px;
+            width: 100%; /* Make the container full width on mobile */
+            left: 80px; /* Align it to the left */
+            right: 0; /* Align it to the right */
+            color: #232526 !important;
+        }
+    
+        .icon-menu {
+            flex-direction: row;
+            width: auto;
+            height: 50px;
+            align-self: center;
+            color: #232526
+            justify-content: center; /* Align the icons to the center */
+        }
+    
+        .close-btn {
+            order: -1;
+            color: #232526
+            align-self: flex-end; /* Align the close button to the right */
+        }
+    
+        .icon-btn {
+            color: #232526
+            font-size: 2em; /* Increase size of icons on mobile */
+            padding: 10px; /* Increase padding around icons on mobile */
+        }
+    }
+    
 
     
     
     .icon-btn {
         background: none;
         border: none;
-        
+        color: #232526
         cursor: pointer;
         transition: color 0.3s ease;
     }
@@ -136,17 +111,13 @@
     }
     
     .close-btn .icon-btn {
-        color: #2A2B31
+        color: #2A2B31;
         cursor: pointer;
         transition: color 0.3s ease;
     }
     
 
-    @media only screen and (min-width: 992px) {
-        #icon-whatsapp2 > a > i {
-        color: #2A2B31;
-        }
-        }
+
 
 
 @media (max-width: 600px) {

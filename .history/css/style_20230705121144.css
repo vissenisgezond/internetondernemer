@@ -26,7 +26,7 @@
     font-size: 34px !important;
     }
     
-    #icon-close > i {     font-size: 34px !important;    color: #2A2B31  }
+    #icon-close > i {     font-size: 34px !important;    color: #232526 !important; }
     
     #icon-contact2 {
         font-weight: bold !important; /* Of een getal tussen 100 en 900, afhankelijk van het gewicht dat je wilt bereiken */
@@ -115,18 +115,16 @@
         font-size: 2em; /* Increase size of icons on mobile */
         padding: 10px; /* Increase padding around icons on mobile */
     }
-
-    #icon-close > i {     font-size: 34px !important;    color: #232526;  }
 }
 
-#icon-whatsapp2 > a > i  { color: #232526;  }
+    
 
     
     
     .icon-btn {
         background: none;
         border: none;
-        
+        color: #232526
         cursor: pointer;
         transition: color 0.3s ease;
     }
@@ -136,17 +134,13 @@
     }
     
     .close-btn .icon-btn {
-        color: #2A2B31
+        color: #2A2B31;
         cursor: pointer;
         transition: color 0.3s ease;
     }
     
 
-    @media only screen and (min-width: 992px) {
-        #icon-whatsapp2 > a > i {
-        color: #2A2B31;
-        }
-        }
+
 
 
 @media (max-width: 600px) {
